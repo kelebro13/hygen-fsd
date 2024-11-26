@@ -1,0 +1,16 @@
+---
+to: src/<%= layerName %>/<%= sliceFileName %>/ui/<%= sliceFileName %>.tsx
+---
+
+import React from 'react';
+import styles from './<%= sliceFileName %>.module.css';
+
+interface IProps {
+  className?: string;
+}
+
+type Props = Readonly<IProps>;
+
+export const <%= sliceName %>: React.FC<Props> = () => {
+  return <div className={styles.container}>Hello from <%= sliceName %>!</div>;
+};

@@ -1,0 +1,16 @@
+---
+to: src/<%= layerName %>/<%= sliceFileName %>/index.ts
+---
+
+// api
+// export * from './api/<%= sliceFileName %>-api';
+// export * from './api/<%= sliceFileName %>-types';
+
+// lib
+// export * from './lib/<%= sliceFileName %>-utils';
+
+// model
+// export * from './model/<%= sliceFileName %>-types';
+
+// ui
+export { <%= sliceName %> } from './ui/<%= sliceFileName %>';
